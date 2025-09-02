@@ -1,86 +1,156 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #7a7a7a;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #7a7a7a;
 }
 
 header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: Georgia, serif;
-  padding: 1rem;
-  background-color: #303235;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+    display: flex;
+    font-family: Georgia;
+    flex-direction: column; /* Logo encima de los enlaces */
+    align-items: center;    /* Centrado horizontal */
+    justify-content: center;
+    padding: 1px;
+    background-color: #303235;
+    position: sticky; /* Se queda fijo arriba */
+    top: 0;
+    z-index: 100;
 }
 
 p {
-  text-align: center;
-  margin: 0 auto 2rem auto;
+    text-align: center;
+    margin: -20px auto 70px auto;
 }
 
 nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    margin-left: -49px;
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  gap: 2rem; /* Más limpio que márgenes negativos */
-  padding: 0;
-  margin: 0;
+    display: inline-block;
+    list-style: none;
+    text-align: center;
 }
 
-nav ul li a {
-  color: rgb(143, 143, 143);
-  text-decoration: none;
-  transition: color 0.3s ease;
+nav ul li {
+    display: inline-block;
+    margin: 0 11px;
+    padding: 0px 0px 0px 9px;
 }
 
-nav ul li a:hover {
-  color: rgb(59, 59, 59);
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
 }
 
-.container, .films {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 150px;
+.films {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -10px;
 }
 
 .films img {
-  max-width: 800px;
-  width: 100%; /* Responsive */
-  margin: 1rem 0;
+    max-width: 800px;
+    max-height: 1000px;
+    margin: -50px;
 }
 
 .films h2 {
-  font-size: 2.5rem;
-  font-family: Helvetica, sans-serif;
-  text-align: center;
-  max-width: 800px;
+    text-align: center;
+    max-width: 800px;
+    font-size: 50px;
+    font-family: Helvetica, sans-serif;
 }
 
 .films h3 {
-  font-size: 1.5rem;
-  text-align: center;
+    text-align: center;
 }
 
 .films p {
-  text-align: justify;
-  max-width: 800px;
-  font-size: 1.25rem;
-  margin: 2rem;
-  font-family: Helvetica, sans-serif;
+    text-align: justify;
+    max-width: 800px;
+    font-size: 25px;
+    margin: 50px;
+    font-family: Helvetica, sans-serif;
+}
+
+ul a {
+    color: rgb(143, 143, 143);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul a:hover {
+    color: rgb(59, 59, 59);
 }
 
 h1 {
-  text-align: center;
-  font-size: 2.5rem;
+    text-align: center;
+    text-size-adjust: 20px;
+}
+
+/* ================== */
+/* 📱 MEDIA QUERIES  */
+/* ================== */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; /* menú en columna */
+        gap: 1rem;
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+
+    .films img {
+        max-width: 100%; /* Imagen ocupa todo el ancho */
+        margin: 1rem 0;
+    }
+
+    .films h2 {
+        font-size: 2rem;
+    }
+
+    .films p {
+        font-size: 1rem;
+        margin: 1rem;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        gap: 0.5rem;
+    }
+
+    .films h2 {
+        font-size: 1.5rem;
+    }
+
+    .films p {
+        font-size: 0.9rem;
+    }
 }
