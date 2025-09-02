@@ -1,113 +1,86 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #7a7a7a;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #7a7a7a;
 }
 
 header {
-    display: flex;
-    position: fixed;
-    font-family: Georgia;
-    flex-direction: column; /* Si deseas colocar el logo sobre los enlaces */
-    align-items: center;    /* Centra horizontalmente */
-    justify-content: center;
-    padding: 1px;
-    background-color: #303235;
-    position: sticky; /* Opcional: se queda fijo en la parte superior al hacer scroll */
-    top: 0;
-    bottom: 0px;
-    z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, serif;
+  padding: 1rem;
+  background-color: #303235;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 p {
-    text-align: center;
-    margin: -20px auto 70px auto;
+  text-align: center;
+  margin: 0 auto 2rem auto;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;    /* Centra horizontalmente */
-    position: sticky;
-    margin-top: -50px;
-    margin-left: -49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul {
-    display: inline-block;
-    list-style: none;
-    text-decoration: none; /* Elimina el subrayado */
-    text-align: center;
+  list-style: none;
+  display: flex;
+  gap: 2rem; /* Más limpio que márgenes negativos */
+  padding: 0;
+  margin: 0;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 11px;
-    padding: 0px 0px 0px 9px;
+nav ul li a {
+  color: rgb(143, 143, 143);
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 150px;
+nav ul li a:hover {
+  color: rgb(59, 59, 59);
 }
 
-.films {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: -10px;
+.container, .films {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
 }
 
 .films img {
-    max-width: 800px;
-    max-height: 1000px;
-    margin: -50px;
+  max-width: 800px;
+  width: 100%; /* Responsive */
+  margin: 1rem 0;
 }
 
 .films h2 {
-    display: inline-block;
-    list-style: none;
-    text-decoration: none; /* Elimina el subrayado */
-    text-align: center;
-    max-width: 800px;
-    font-size: 50px;
-    font-family: Helvetica, sans-serif;
+  font-size: 2.5rem;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  max-width: 800px;
 }
 
 .films h3 {
-    display: inline-block;
-    list-style: none;
-    text-decoration: none; /* Elimina el subrayado */
-    text-align: center;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .films p {
-    display: inline-block;
-    list-style: none;
-    text-decoration: none; /* Elimina el subrayado */
-    text-align: justify;
-    max-width: 800px;
-    font-size: 25px;
-    margin: 50px;
-    font-family: Helvetica, sans-serif;
+  text-align: justify;
+  max-width: 800px;
+  font-size: 1.25rem;
+  margin: 2rem;
+  font-family: Helvetica, sans-serif;
 }
 
-ul a { /* Aplica a los enlaces dentro de una lista desordenada u ordenada */
-    color: rgb(143, 143, 143); /* Cambia el color del enlace */
-    text-decoration: none; /* Elimina el subrayado */
-    cursor: pointer;
-  }
-  
-ul a:hover { /* Cambia el color cuando el mouse pasa por encima del enlace */
-    color: rgb(59, 59, 59); /* Cambia el color del enlace al pasar el mouse */
-    }
-
 h1 {
-    text-align: center;
-    text-size-adjust: 20px;
+  text-align: center;
+  font-size: 2.5rem;
 }
