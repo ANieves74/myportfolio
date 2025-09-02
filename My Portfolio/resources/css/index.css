@@ -25,7 +25,7 @@ p {
     margin: -20px auto 70px auto;
 }
 
-.nav {
+nav {
     display: flex;
     justify-content: center;
     align-items: center;    /* Centra horizontalmente */
@@ -34,14 +34,14 @@ p {
     margin-left: -49px;
 }
 
-.nav ul {
+nav ul {
     display: inline-block;
     list-style: none;
     text-decoration: none; /* Elimina el subrayado */
     text-align: center;
 }
 
-.nav ul li {
+nav ul li {
     display: inline-block;
     margin: 0 11px;
     padding: 0px 0px 0px 9px;
