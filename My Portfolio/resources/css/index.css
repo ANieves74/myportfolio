@@ -74,20 +74,31 @@ section h2 {
 section p {
     font-size: 1.1rem;
     max-width: 800px;
-    margin: 0 aut
+    margin: 0 auto;
 }
 
 .projects-container {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
     justify-content: center; /* centra los proyectos horizontalmente */
     gap: 2rem;
 }
 
 footer {
-    text-align: center;
-    width: 100%;
-    padding: 2rem;
-    background: linear-gradient(135deg, #0bb397, #0b9fb3);
-    color: #fff;
+  display: flex;                 /* usamos flexbox */
+  justify-content: center;       /* centrado horizontal */
+  align-items: center;           /* centrado vertical (por si hay más altura) */
+  text-align: center;            /* asegura texto alineado */
+  width: 100%;                   /* que ocupe toda la pantalla */
+  padding: 2rem;
+  background: linear-gradient(135deg, #0bb397, #0b9fb3);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+footer p {
+  position: relative;
+  left: -25px; /* lo mueves 20px a la izquierda */
 }
