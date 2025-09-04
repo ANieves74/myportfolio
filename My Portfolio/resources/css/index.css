@@ -81,6 +81,11 @@ section p {
     margin: 0 auto;
 }
 
+.section-projects {
+    margin-top: -400px;   /* reduce el espacio superior */
+    padding-top: 0;     /* elimina padding innecesario */
+}
+
 .projects-container {
     display: flex;
     flex-wrap: wrap;
@@ -93,7 +98,7 @@ section p {
 .about-text {
     font-family: 'Montserrat', sans-serif;
     position: relative;
-    right: 250px;
+    left: 340px;
     max-width: 620px; /* limita la línea a un ancho más cuadrado */
     line-height: 1.3; 
     top: -20px;
@@ -101,14 +106,26 @@ section p {
     line-height: 1.6;    /* opcional: mejora la lectura */
 }
 
+.aboutme-text {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    left: 620px;
+    max-width: 620px; /* limita la línea a un ancho más cuadrado */
+    line-height: 1.3; 
+    top: -20px;
+    margin-bottom: 40px; /* aumenta la separación entre párrafos */
+    line-height: 1.6;    /* opcional: mejora la lectura */
+}
+
+
 .about-text p:last-child {
     margin-bottom: 0; /* evita espacio extra al final */
 }
 
 .about-image-frame {
     position: relative;
-    left: 400px;
-    top: -700px;
+    left: 980px;
+    bottom: 600px;
     width: 350px;           /* tamaño del marco */
     height: 400px;          /* igual que el ancho para que sea un círculo */
     border-radius: 50%;     /* hace el marco redondo */
