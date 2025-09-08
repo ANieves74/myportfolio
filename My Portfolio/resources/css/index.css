@@ -127,9 +127,9 @@ section p {
 
 .project2 a {
     display: inline-block;          /* que se comporte como botón */
-    padding: 5px 5px;             /* espacio alrededor de la imagen */
+    padding: 20px 5px;             /* espacio alrededor de la imagen */
     border-radius: 12px;            /* bordes redondeados */
-    background-color: rgb(236,235,233); /* color de fondo suave */
+    background-color: rgb(27, 27, 27); /* color de fondo suave */
     transition: transform 0.2s, box-shadow 0.2s;
     text-decoration: none;          /* quita subrayado del enlace */
 }
@@ -189,7 +189,6 @@ section p {
     margin-bottom: 40px; /* aumenta la separación entre párrafos */
     line-height: 1.6;    /* opcional: mejora la lectura */
 }
-
 
 
 .about-text p:last-child {
